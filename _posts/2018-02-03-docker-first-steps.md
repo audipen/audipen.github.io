@@ -19,8 +19,11 @@ Containers are really gaining popularity now and one can't afford to be obliviou
  - Frequently used commands
    ------------------------
    Some commands you would use frequently in the labs are
-	- [docker ps](https://docs.docker.com/engine/reference/commandline/ps/) : List containers 
-	- [docker run](https://docs.docker.com/engine/reference/commandline/run/) : Starts a new container and runs a command in it
-	- [docker stop container-name](https://docs.docker.com/engine/reference/commandline/stop/) : Stops one or more running containers
-	- [docker rm container-name](https://docs.docker.com/engine/reference/commandline/rm/) : Remove one or more containers
+	- [docker container ls](https://docs.docker.com/engine/reference/commandline/container_ls/) : List containers 
+	- [docker container run](https://docs.docker.com/engine/reference/commandline/container_run/) : Starts a new container and runs a command in it
+	- [docker container stop container-name](https://docs.docker.com/engine/reference/commandline/container_stop/) : Stops one or more running containers
+	- [docker container rm container-name](https://docs.docker.com/engine/reference/commandline/container_rm/) : Remove one or more containers
 	- [docker images](https://docs.docker.com/engine/reference/commandline/images/) : List images present locally
+	- [docker image build](https://docs.docker.com/engine/reference/commandline/image_build/) : Build an image from a Dockerfile
+	
+	Note that most of the 'docker container' commands have older versions (for example, 'docker ps' is the same as 'docker container ps') which will probably be deprecated in the future. 
