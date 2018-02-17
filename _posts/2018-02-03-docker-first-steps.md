@@ -27,3 +27,12 @@ Containers are really gaining popularity now and one can't afford to be obliviou
 	- [docker image build](https://docs.docker.com/engine/reference/commandline/image_build/) : Build an image from a Dockerfile
 	
 	Note that most of the 'docker container' commands have older versions (for example, 'docker ps' is the same as 'docker container ps') which will probably be deprecated in the future. 
+
+ - Docker on Windows
+   -----------------
+   There are a couple of things to keep in mind when it comes to Docker on Windows.You can have basically two types of containers on Windows
+   - **_Linux containers_** : These run in a Linux Hyper-V VM running on Windows. All containers run within this single VM and share the Linux kernel, similar to what you would expect of Linux containers running on a Linux machine.
+   - **_Windows containers_** : These run directly in the host where multiple containers share the host Windows kernel. Additionally Windows offer something called as Hyper-V containers. These are a bit special.Each container runs in it's own tiny Hyper-V VM. Yes,a VM is spun up for every container. This offers additional isolation if required.
+	
+   
+   
