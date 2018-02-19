@@ -30,9 +30,10 @@ Containers are really gaining popularity now and one can't afford to be obliviou
 
  - Docker on Windows
    -----------------
-   There are a couple of things to keep in mind when it comes to Docker on Windows.You can have basically two types of containers on Windows
+   There are a couple of things to keep in mind when it comes to Docker on Windows.You can have basically three types of containers on Windows
    - **_Linux containers_** : These run in a Linux Hyper-V VM running on Windows. All containers run within this single VM and share the Linux kernel, similar to what you would expect of Linux containers running on a Linux machine.
-   - **_Windows containers_** : These run directly in the host where multiple containers share the host Windows kernel. Additionally Windows offer something called as Hyper-V containers. These are a bit special.Each container runs in it's own tiny Hyper-V VM. Yes,a VM is spun up for every container. This offers additional isolation if required.
+   - **_Windows containers_** : Native Windows containers run directly in the host where multiple containers share the host Windows kernel. 
+   - **_Hyper-V containers_** : Docker on Windows offer something called as Hyper-V containers. These are a bit special.Each container runs in it's own lightweight Hyper-V VM. Yes,a VM is spun up for every container. This offers additional isolation if required and also the possibility to run different versions of the OS or even a combination of Windows and Linux containers.
 	
    
    
