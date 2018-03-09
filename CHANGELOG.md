@@ -2,6 +2,24 @@
 
 ### Enhancements
 
+* Update jQuery to version `3.3.1`. [#1491](https://github.com/mmistakes/minimal-mistakes/issues/1491)
+* Add link to jekyll-algolia's `files_to_exclude` documentation.
+* Update Font Awesome to version [`5.0.7`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md). [#1555](https://github.com/mmistakes/minimal-mistakes/pull/1555)
+
+### Bug Fixes
+
+* Focus Algolia search input after clicking on search toggle.
+
+## [4.10.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.0)
+
+### Enhancements
+
+* Add support for [Algolia](https://www.algolia.com/) search provider ([see demo](https://mmistakes.github.io/minimal-mistakes-algolia-search/)). [#1416](https://github.com/mmistakes/minimal-mistakes/issues/1416)
+
+## [4.9.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.9.1)
+
+### Enhancements
+
 * Simplify year archive Liquid.
 * Add documentation on how to downgrade theme.
 * Improve greedy navigation's layout when JavaScript is disabled.
@@ -9,16 +27,17 @@
 * Minify `assets/js/lunr/lunr.js`.
 * Improve calculation of Greedy navigation's `availableSpace`.
 * Add Danish and Russian translations for new search strings. [#1472](https://github.com/mmistakes/minimal-mistakes/pull/1472) [#1477](https://github.com/mmistakes/minimal-mistakes/pull/1477)
-* Indicate that archive title's are links with an underline.
+* Indicate that archive titles are links with an underline.
 * Remove `base_path` include from `/test` pages.
 * Reduce font-size of page meta in list/grid items.
 * Improve feature row styling when used with `archive` layout. [#1484](https://github.com/mmistakes/minimal-mistakes/issues/1484)
 * Improve German translations. [#1511](https://github.com/mmistakes/minimal-mistakes/pull/1511)
 * Update Font Awesome to `5.0.6`. [#1513](https://github.com/mmistakes/minimal-mistakes/pull/1513)
+* Add `wide` variant to single layout. [#1516](https://github.com/mmistakes/minimal-mistakes/pull/1516)
 
 ### Bug Fixes
 
-* Allow`author` to accept an object or string. [#289](https://github.com/mmistakes/minimal-mistakes/issues/289)
+* Allow `author` to accept an object or string. [#289](https://github.com/mmistakes/minimal-mistakes/issues/289)
 * Fix syntax highlighting line number styling inconsistency. [#1467](https://github.com/mmistakes/minimal-mistakes/issues/1467)
 * Fix author sidebar icon colors for dark skins. [#1482](https://github.com/mmistakes/minimal-mistakes/issues/1482)
 * Remove misleading underline hover state on feature row items.
