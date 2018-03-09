@@ -6,7 +6,7 @@ tags:
   - docker
 ---
 
-Containers are really gaining popularity now and one can't afford to be oblivious to Docker containers anymore. Here are some first steps into the Docker world.
+Containers are really gaining popularity now and one can't afford to be oblivious to them anymore. Docker is the most popular tool out there that provides containerization. Here are some first steps into the Docker world.
 
  - Installation 
    ------------
@@ -19,12 +19,13 @@ Containers are really gaining popularity now and one can't afford to be obliviou
  - Frequently used commands
    ------------------------
    Some commands you would use frequently in the labs are
-	- [docker container ls](https://docs.docker.com/engine/reference/commandline/container_ls/) : List containers 
-	- [docker container run](https://docs.docker.com/engine/reference/commandline/container_run/) : Starts a new container and runs a command in it
-	- [docker container stop container-name](https://docs.docker.com/engine/reference/commandline/container_stop/) : Stops one or more running containers
-	- [docker container rm container-name](https://docs.docker.com/engine/reference/commandline/container_rm/) : Remove one or more containers
-	- [docker images](https://docs.docker.com/engine/reference/commandline/images/) : List images present locally
-	- [docker image build](https://docs.docker.com/engine/reference/commandline/image_build/) : Build an image from a Dockerfile
+	- **[docker container ls](https://docs.docker.com/engine/reference/commandline/container_ls/)** : List containers 
+	- **[docker container run](https://docs.docker.com/engine/reference/commandline/container_run/)** : Starts a new container and runs a command in it
+	- **[docker container stop container-name](https://docs.docker.com/engine/reference/commandline/container_stop/)** : Stops one or more running containers
+	- **docker container stop $(dock container -q)** : During development it is quite common to want to stop all running containers. The 'docker container -q' command provides the preceding 'docker stop' command with a list of numeric IDs for all running containers.
+	- **[docker container rm container-name](https://docs.docker.com/engine/reference/commandline/container_rm/)** : Remove one or more containers
+	- **[docker images](https://docs.docker.com/engine/reference/commandline/images/)** : List images present locally
+	- **[docker image build](https://docs.docker.com/engine/reference/commandline/image_build/)** : Build an image from a Dockerfile
 	
 	Note that most of the 'docker container' commands have older versions (for example, 'docker ps' is the same as 'docker container ps') which will probably be deprecated in the future. 
 
