@@ -4,17 +4,32 @@ permalink: /docs/history/
 excerpt: "Change log of enhancements and bug fixes made to the theme."
 sidebar:
   nav: docs
-last_modified_at: 2018-03-01T11:32:04-05:00
+last_modified_at: 2018-03-20T17:32:27-04:00
 toc: true
 ---
 
-## Unreleased
+## [4.11.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.11.1)
+
+### Enhancements
+
+* Add default `theme` and `remote_theme` values to `_config.yml`.
+* Add new layouts (`posts`, `categories`, `tags`, `collection`, `category`, and `tag`) for easier archive page creation.
+
+### Bug Fixes
+
+* Replace `relative_url` filter with `relative_url` where it makes sense (asset/navigation related paths). [#1588](https://github.com/mmistakes/minimal-mistakes/issues/1588)
+* Fix search excerpts that run together because of implied spaces.
+
+## [4.10.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.1)
 
 ### Enhancements
 
 * Update jQuery to version `3.3.1`. [#1491](https://github.com/mmistakes/minimal-mistakes/issues/1491)
 * Add link to jekyll-algolia's `files_to_exclude` documentation.
-* Update Font Awesome to version [`5.0.7`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md). [#1555](https://github.com/mmistakes/minimal-mistakes/pull/1555)
+* Update Font Awesome to version [`5.0.8`](https://github.com/FortAwesome/Font-Awesome/blob/master/CHANGELOG.md). [#1561](https://github.com/mmistakes/minimal-mistakes/pull/1561)
+* Activate Algolia search for documentation site. [#1570](https://github.com/mmistakes/minimal-mistakes/issues/1570)
+* Add missing German translations. [#1577](https://github.com/mmistakes/minimal-mistakes/pull/1577)
+* Add support for Google Analytics with global site tag (gtag.js) [#1563](https://github.com/mmistakes/minimal-mistakes/pull/1563)
 
 ### Bug Fixes
 
@@ -455,7 +470,7 @@ toc: true
 ### Enhancements
 
 * "Gemify" theme ~> `gem "minimal-mistakes-jekyll"`
-* Replace `base_path` include with `absolute_url` filter where possible.
+* Replace `base_path` include with `relative_url` filter where possible.
 * Allow images to be placed in other folders. Remove `/images/` only restriction and encourage placement in `/assets/images/` instead. **Full paths are now required. If upgrading from MM 3.4 add `/images/` before filenames in Front Matter and `_config.yml` variables.**
 * Add [home `layout`](https://github.com/mmistakes/minimal-mistakes/blob/master/_layouts/home.html)
 * Added missing Turkish translations for UI text. [#621](https://github.com/mmistakes/minimal-mistakes/pull/621)
