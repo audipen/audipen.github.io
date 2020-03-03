@@ -11,10 +11,10 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes@4.18.1"
+remote_theme           : mmistakes/minimal-mistakes@2513357
 
 # Site Settings
-locale                   : "en"
+locale                   : "en-US"
 title                    : "Cloud notes"
 title_separator          : "-"
 name                     : "Aditya Pendharkar"
@@ -26,7 +26,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "staticman_v2"
+  provider               : staticman_v2
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
