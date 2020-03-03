@@ -52,7 +52,7 @@ staticman:
       type               : "date"
       options:
         format           : "iso8601"
-  endpoint               : "https://audipen-comments.herokuapp.com/v3/entry/github/audipen/audipen.github.io/master/comments"
+  endpoint               : "https://audipen-comments.herokuapp.com/v3/entry/github/"
 reCaptcha:
   siteKey                :
   secret                 :
