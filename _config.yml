@@ -39,7 +39,7 @@ comments:
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master"
-  endpoint               : https://audipen-comments.herokuapp.com/v3/entry/github/audipen/audipen.github.io/
+  endpoint               : https://audipen-comments.herokuapp.com/v3/entry/github/audipen/audipen.github.io/master
   commitMessage          : "New comment."
   filename               :  comment-{@timestamp}
   format                 : "yml"
