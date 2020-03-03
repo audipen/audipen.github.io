@@ -39,6 +39,7 @@ comments:
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master"
+  endpoint               : https://dev.staticman.net/v3/entry/github/  
   commitMessage          : "New comment."
   filename               :  comment-{@timestamp}
   format                 : "yml"
