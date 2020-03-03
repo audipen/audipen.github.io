@@ -8,7 +8,7 @@ tags:
 
 There is tons of great content on Azure on the Internet. I've attempted to list down a few resources I frequently use to keep abreast with the latest happenings on Azure.
 
-* **Documentation23**
+* **Documentation**
 	*  ['Microsoft Learn'](https://docs.microsoft.com/en-us/learn/) provides a lot of free content for various products targeted at various levels of expertise. Below are some Learning Paths for learning Azure for a 'Beginner' (using the filter <https://docs.microsoft.com/en-us/learn/browse/?levels=beginner&products=azure&resource_type=learning%20path>)
 	* Azure Fundamentals -  <https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/>
 	* Architect great solutions in Azure - <https://docs.microsoft.com/en-us/learn/paths/architect-great-solutions-in-azure/>
