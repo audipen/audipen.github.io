@@ -36,23 +36,23 @@ comments:
     appid                :
     num_posts            :  5 
     colorscheme          : "light" 
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "master"
-  commitMessage          : "New comment."
-  filename               :  comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "/_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601"
-  endpoint               : "https://audipen-comments.herokuapp.com/v3/entry/github/"
+  staticman:
+    allowedFields          : ['name', 'email', 'url', 'message']
+    branch                 : "master"
+    commitMessage          : "New comment."
+    filename               :  comment-{@timestamp}
+    format                 : "yml"
+    moderation             : true
+    path                   : "/_data/comments/{options.slug}"
+    requiredFields         : ['name', 'email', 'message']
+    transforms:
+      email                : "md5"
+    generatedFields:
+      date:
+        type               : "date"
+        options:
+          format           : "iso8601"
+    endpoint               : "https://audipen-comments.herokuapp.com/v3/entry/github/"
 reCaptcha:
   siteKey                :"6LddWd4UAAAAACQ2LToGZFF5TP-p1kW791UUt9gv"
   secret                 :"KpDk0/0JuJTsLSBic7KjDcISDcbF0KRFcHcllKFT3hkeESAsuazkcyBIsLSCSnRUFemoDQBVKd42LYoATO17WFODCz0RDo6yqLFmQ9I1SdrH0tK0I8ohsPGDfYdHiTSUQLTmffj+rxLkeC+XA+HX31Ke+yILfJcd2DwFJuaEn3U0eWZz7g6UdMUMCKgQFraO7o+anO2IxReIAIn5HLFt5ZJmHUpkGfSm2U/kOCUwvBi0MUtvk2IjI2Zyo6zIoyI/xuhHiDRplyGV35fyRMpaW29yNccnHgJH6Kgj1syicGDmnjDYgjcBZWbsJBvGvTRizA9GZTeb1YoNhF2ik2smnxwFcGmVLVZsyerz1EBhUTs4n7zOJTemRhyPBYGRBWv3d6OJnS2Nvpn56Qvq/Tw7dYZRs22Bybl+pRxLSG+M+HdNO5mnYAYY5Q+ZYvG1MGWWiZ7mir1cgEWGtQMmDJE+xTEMmO57Thvdb25FABXNtF0mzD+UMHaAGBkUlA9yJCH9m86ztKXUXj0py/cIXNyk40Sk4FnXlksydGKCu+euAdVP9Da+wIAjfUKoTlgwEEVual4PYq9JUS8hdoW1l+30Nm+dKmFoeX1R8nxSi0YFTCq/GzEMfyMlKPbeNDsPhPcFBZLaO7JheefustnMc6jouja2DpMGsricwH5QXi4iVNc="
