@@ -7,6 +7,16 @@ tags:
   - Azure Automation
   - Azure Blueprints
   - Azure Policy
+cis-create:
+  - url: /assets/images/create-cis.png
+    image_path: /assets/images/create-cis.png
+    alt: "Create CIS blueprint"
+    title: "CIS sample blueprint."
+cis-initiative:
+  - url: /assets/images/cis-initiative.png
+    image_path: /assets/images/cis-initiative.png
+    alt: "CIS policy initiative"
+    title: "CIS policy initiative."
 ---
 
 The 'Center of Internet Security' (CIS) is a non-profit entity that aim to protect private and public organizations against cyber threats. CIS has come up with benchmarks for various technology groups to safeguard them against evolving cyber threats. Of the various benchmarks there is one also for 'Microsoft Azure' which provides a set of guidelines for establishing a secure baseline configuration. 
@@ -20,12 +30,20 @@ How can these recommendations be actually implemented and enforced by an organiz
 
  In this post I will describe the Blueprint approach in detail.
 
- [Azure Blueprint](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview) is a container that allows you to bring together various artifacts like Resource Groups, Policy Assignments, Role Assignments, ARM templates in order to define a set of repeatable resources that adhere to an organizations standards and rules. [Azure Policies](https://docs.microsoft.com/en-us/azure/governance/policy/overview) allow you to specify rules that resources must adhere to and once assigned to the respective resources, the service periodically checks whether the resources comply with the rules. 
+ An [Azure Blueprint](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview) is a container that allows you to bring together various artifacts like Resource Groups, Policy Assignments, Role Assignments, ARM templates in order to define a set of repeatable resources that adhere to an organizations standards and rules. [Azure Policies](https://docs.microsoft.com/en-us/azure/governance/policy/overview) allow you to specify rules that resources must adhere to and once assigned to the respective resources, the service periodically checks whether the resources comply with the rules. 
 	
- Microsoft provides several Blueprint samples and one of them is the ['CIS Microsoft Azure Foundations Benchmark' sample](https://docs.microsoft.com/en-us/azure/governance/blueprints/samples/cis-azure-1.1.0/) that contains several policies that implement various recommendations within the CIS benchmark. This sample can be easily deployed to an Azure subscription. [How the policies map to the recommendations](https://docs.microsoft.com/en-us/azure/governance/blueprints/samples/cis-azure-1.1.0/control-mapping) in the benchmark is detailed in the documentation. An important point worth noting is that not all recommendations have an equivalent policy in the blueprint i.e. if the result of a Azure Policy run shows '*Compliant*' it does not mean that the target subscription(s) is fully CIS compliant.
+ Microsoft provides several Blueprint samples and one of them is the ['CIS Microsoft Azure Foundations Benchmark' sample](https://docs.microsoft.com/en-us/azure/governance/blueprints/samples/cis-azure-1.1.0/) that contains several policies that implement various recommendations within the CIS benchmark.
+  
+ {% include gallery id="cis-create" caption="CIS sample blueprint." %}
+ 
+ This sample can be easily deployed to an Azure subscription. [How the policies map to the recommendations](https://docs.microsoft.com/en-us/azure/governance/blueprints/samples/cis-azure-1.1.0/control-mapping) in the benchmark is detailed in the documentation. An important point worth noting is that not all recommendations have an equivalent policy in the blueprint i.e. if the result of a Azure Policy run shows '*Compliant*' it does not mean that the target subscription(s) is fully CIS compliant.
 
 ## Deploying the Blueprint	
- Let's see how to deploy the CIS sample blueprint. The first step is to create a new Blueprint based on the sample. Usually you would need to add artifacts to the Blueprint but the sample already contains a '*Policy Assignment*' artifact. This assignment contains all the policies that implement the CIS checks. Once created, the Blueprint is saved in 'Draft' mode and needs to be pulished before it can be assigned to a target resource. Detailed instructions on all these steps are provided in the [documentation](https://docs.microsoft.com/en-us/azure/governance/blueprints/samples/cis-azure-1.1.0/deploy).
+ Let's see how to deploy the CIS sample blueprint. The first step is to create a new Blueprint based on the sample. Usually you would need to add artifacts to the Blueprint but the sample already contains a '*Policy Assignment*' artifact. This Policy Initiative contains all the policies that implement the CIS checks. 
+ 
+ {% include gallery id="cis-initiative" caption="CIS policy initiative." %}
+
+ Once created, the Blueprint is saved in 'Draft' mode and needs to be pulished before it can be assigned to a target resource. Detailed instructions on all these steps are provided in the [documentation](https://docs.microsoft.com/en-us/azure/governance/blueprints/samples/cis-azure-1.1.0/deploy).
   
   Once assigned the contained artifacts are deployed in the target resource. In this case, the policies are applied to all the subscriptions present in the Management Group,if you have selected a Management Group as the target, or the selected Subscription. The policies are evaluated for compliance every 24 hours and are automatically applied to all existing resources in the target and also to new ones that are added later on.
  
